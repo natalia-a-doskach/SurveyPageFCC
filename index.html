@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Survey Page</title>
   <link rel="stylesheet" href='style.css'>
@@ -9,82 +10,138 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <meta name='viewport' content="width=device-width,initial-scale=1.0">
 </head>
+
 <body>
   <h1>Survey Form</h1>
   <form action="#">
-  <h2>What is your first name?</h2>
-  <input type="text" placeholder="Type your answer here" required>
-  <p>
-Hi _____,<br/><br/>
-Thank you for taking this questionnaire.<br/><br/>
-It is completely anonymous and only takes about 5 minutes. Your answers will help us to improve your experience when using FreeCodeCamp. </p>
+    <h2>What is your first name?</h2>
+    <input type="text" placeholder="Type your answer here" required>
+    <p>
+      Hi _____,<br /><br />
+      Thank you for taking this questionnaire.<br /><br />
+      It is completely anonymous and only takes about 5 minutes. Your answers will help us to improve your experience when using FreeCodeCamp. </p>
 
- Are you already working as a software developer?
+      <fieldset>
+        <legend>Are you already working as a software developer?</legend>
+        <input type="radio" id="yeswork" name="alreadyworking"><label for='yeswork'>Yes</label>
+        <input type="radio" id="nowork" name="alreadyworking"><label for='nowork'>No</label>
+      </fieldset>
 
- Would you prefer to...
- Start your own business
- Work for a startup
- Work for government
- Freelance
- Work for a nonprofit
- Work for a multinational corporation
+      <fieldset>
+        <legend>Would you prefer to...</legend>
+        <input type="radio" id="business" name="company"><label for='business'>Start your own business</label>
+        <input type="radio" id="startup" name="company"><label for='startup'>Work for a startup</label>
+        <input type="radio" id="government" name="company"><label for='goverment'>Work for government</label>
+        <input type="radio" id="freelance" name="company"><label for='freelance'>Freelance</label>
+        <input type="radio" id="nonprofit" name="company"><label for='nonprofit'>Work for a nonprofit</label>
+        <input type="radio" id="corporation" name="company"><label for='corporation'>Work for a multinational corporation</label>
+      </fieldset>
 
- Which of these careers are you interested in?
- choose as many as you like
- 3)Full-Stack Web Developer
- 10)Front-End Web Developer
- 11)Back-End Web Developer
- 1)Teacher/Trainer2)UX Designer4)DevOps/SysAdmin
- 5)Data Scientist6)Information Security7)Game Developer8)Mobile Developer9)Product Manager
 
- When do you plan to start applying for developer jobs?
- I'm already applying
- Within the next 6 months
- Within 7 to 12 months
- More than 12 months from now
- I haven't decided
 
- Would you prefer to work...
- From home
- In an office with other developers
- No preference
+      <fieldset>
+      <legend>Which of these careers are you interested in?</legend>
+      <p>choose as many as you like</p>
+      <input type="checkbox" id="full-stack" name="career"><label for='full-stack'>Full-Stack Web Developer</label>
+      <input type="checkbox" id="frontdev" name="career"><label for='frontdev'>Front-End Web Developer</label>
+      <input type="checkbox" id="backdev" name="career"><label for='backdev'>Back-End Web Developer</label>
+      <input type="checkbox" id="teacher" name="career"><label for='teacher'>Teacher/Trainer</label>
+      <input type="checkbox" id="ux" name="career"><label for='ux'>UX Designer</label>
+      <input type="checkbox" id="devops" name="career"><label for='devops'>DevOps/SysAdmin</label>
+      <input type="checkbox" id="data" name="career"><label for='data'>Data Scientist</label>
+      <input type="checkbox" id="security" name="career"><label for='security'>Information Security</label>
+      <input type="checkbox" id="game" name="career"><label for='game'>Game Developer</label>
+      <input type="checkbox" id="mobile" name="career"><label for='mobile'>Mobile Developer</label>
+      <input type="checkbox" id="product-manager" name="career"><label for='product-manager'>Product Manager</label>
+    </fieldset>
 
- Are you willing to relocate for a job? Yes No
+    <fieldset>
+      <legend>When do you plan to start applying for developer jobs?</legend>
+      <input type="radio" id="already" name="applying"><label for='already'>I'm already applying</label>
+      <input type="radio" id="6m" name="applying"><label for='6m'>Within the next 6 months</label>
+      <input type="radio" id="7m" name="applying"><label for='7m'>Within 7 to 12 months</label>
+      <input type="radio" id="12m" name="applying"><label for='12m'>More than 12 months from now</label>
+      <input type="radio" id="dontknow" name="applying"><label for='dontknow'>I haven't decided</label>
+    </fieldset>
 
-What is your biggest reason for learning to code?
 
-To change careers
-To succeed in current careers
-To meet school requirements
-To create art or entertainment
-To start a business
-As a hobby
-other
 
-About how many hours do you spend learning each week?
 
-About how many months have you been programming for?
 
-Have you attended a full-time coding  bootcamp? Yes No
 
-How old are you?
 
-What's your gender?
-Female
-Male
-Prefer not to say
-other
+    <fieldset>
+      <legend>Would you prefer to work...</legend>
+      <input type="radio" id="home" name="where"><label for='home'>From home</label>
+      <input type="radio" id="office" name="where"><label for='office'>In an office with other developers</label>
+        <input type="radio" id="nopref" name="where"><label for='nopref'>No preference</label>
+    </fieldset>
 
-What's the biggest degree or level of school you have completed?
-No high school
-Some high school
-High school diploma or equivalent
-Some college credit, no degree
-Bachelor's degree
-Master's degree
-Ph.D.
 
- Submit
-</form>
+
+
+        <fieldset>
+          <legend>Are you willing to relocate for a job?</legend>
+          <input type="radio" id="yes_relocate" name="relocate"><label for='yes_relocate'>Yes</label>
+          <input type="radio" id="no_relocate" name="relocate"><label for='no_relocate'>No</label>
+        </fieldset>
+
+
+    <fieldset>
+      <legend>  What is your biggest reason for learning to code?</legend>
+      <input type="radio" id="change" name="whycode"><label for='change'>To change careers</label>
+      <input type="radio" id="incurrent" name="whycode"><label for='incurrent'>To succeed in current careers</label>
+      <input type="radio" id="school" name="whycode"><label for='school'>To meet school requirements</label>
+      <input type="radio" id="art" name="whycode"><label for='art'>To create art or entertainment</label>
+      <input type="radio" id="business" name="whycode"><label for='business'>To start a business</label>
+      <input type="radio" id="hobby" name="whycode"><label for='hobby'>As a hobby</label>
+      <input type="radio" id="Other" name="whycode"><label for='Other'>Other</label>
+    </fieldset>
+
+    <label for="hours">About how many hours do you spend learning each week?</label>
+    <input id="hours" type="text" placeholder="Type your answer here">
+
+    <label for="months">About how many months have you been programming for?</label>
+    <input id="months" type="text" placeholder="Type your answer here">
+
+
+    <fieldset>
+      <legend>Have you attended a full-time coding bootcamp?</legend>
+      <input type="radio" id="yes" name="bootcamp"><label for='yes'>Yes</label>
+      <input type="radio" id="no" name="bootcamp"><label for='no'>No</label>
+    </fieldset>
+
+    <label for="age">How old are you?</label>
+    <input id="age" type="text" placeholder="Type your answer here">
+
+    <fieldset>
+      <legend>What's your gender?</legend>
+      <input type="radio" id="fem" name="gender"><label for='fem'>Female</label>
+      <input type="radio" id="male" name="gender"><label for='male'>Male</label>
+      <input type="radio" id="nottosay" name="gender"><label for='nottosay'>Prefer not to say</label>
+      <input type="radio" id="other" name="gender"><label for='other'>Other</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>What's the biggest degree or level of school you have completed?</legend>
+      <input type="radio" id="nohs" name="educ"><label for='nohs'>No high school</label>
+      <input type="radio" id="somehs" name="educ"><label for='somehs'>Some high school</label>
+      <input type="radio" id="hs" name="educ"><label for='hs'>High school diploma or equivalent</label>
+      <input type="radio" id="somecoll" name="educ"><label for='somecoll'>Some college credit, no degree</label>
+      <input type="radio" id="BD" name="educ"><label for='BD'>Bachelor's degreel</label>
+      <input type="radio" id="MD" name="educ"><label for='MD'>Master's degree</label>
+      <input type="radio" id="PhD" name="educ"><label for='PhD'>Ph.D.</label>
+    </fieldset>
+
+
+
+
+
+
+    </fieldset>
+
+    <button type='submit'>Submit</button>
+  </form>
 </body>
+
 </html>
