@@ -26,3 +26,36 @@ body {
     background-attachment: fixed;
     opacity:1;
 }
+footer p{
+  font-size: 12px;
+  font-family: 'Quicksand', sans-serif;
+  text-align:center;
+  margin-right:5px;
+}
+
+#hi {
+  font-size: 24px;
+  font-family: "Quicksand", sans-serif;
+}
+
+a{
+  color: ##505649;
+}
+a:visited{
+  color: ##505649; /*FIX ME*/
+}
+/*STYLING TEXT FORMS*/
+input[type=text] {
+  display:block;
+  background-color:rgba(0,0,0,0);
+  margin:15px;
+  padding:10px;
+  border-radius:10px;
+  border-style:solid;
+  border-color: rgba(0,0,0,0.6);
+}
+
+fieldset {
+  margin-top:30px;
+  margin-bottom:30px;
+}

@@ -12,11 +12,12 @@
 </head>
 
 <body>
-  <h1>Survey Form</h1>
+  <header><h1>Survey Form</h1></header>
+  <main>
   <form action="#">
     <legend>What is your first name?</legend>
     <input type="text" placeholder="Type your answer here" required>
-    <p>
+    <p id="hi">
       Hi _____,<br /><br />
       Thank you for taking this questionnaire.<br /><br />
       It is completely anonymous and only takes about 5 minutes. Your answers will help us to improve your experience when using FreeCodeCamp. </p>
@@ -85,7 +86,7 @@
       <input type="radio" id="hobby" name="whycode"><label for='hobby'>As a hobby</label>
       <input type="radio" id="Other" name="whycode"><label for='Other'>Other</label>
     </fieldset>
-    
+
     <fieldset>
       <label for="hours">About how many hours do you spend learning each week?</label>
       <input id="hours" type="text" placeholder="Type your answer here">
@@ -128,6 +129,10 @@
 
     <button type='submit'>Submit</button>
   </form>
+</main>
+<footer>
+<p>Made with pure HTML, CSS & love by <a target='_blank' href='https://github.com/natalia-a-doskach'>Natalia Doskach</a>.</p>
+</footer>
 </body>
 
 </html>
