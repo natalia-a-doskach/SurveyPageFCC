@@ -1,1 +1,28 @@
-h1 {color:blue;}
+legend {
+  font-size: 24px;
+  font-family: "Quicksand", sans-serif;
+}
+label{
+  font-family: "Roboto", sans-serif;
+}
+[ for='hours']{
+  font-size: 24px;
+  font-family: "Quicksand", sans-serif;
+}
+[ for='months']{
+  font-size: 24px;
+  font-family: "Quicksand", sans-serif;
+}
+[ for='age']{
+  font-size: 24px;
+  font-family: "Quicksand", sans-serif;
+}
+/*site background*/
+body {
+    background-image: url("cactus2.jpg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity:1;
+}

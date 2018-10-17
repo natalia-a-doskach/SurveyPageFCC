@@ -14,32 +14,30 @@
 <body>
   <h1>Survey Form</h1>
   <form action="#">
-    <h2>What is your first name?</h2>
+    <legend>What is your first name?</legend>
     <input type="text" placeholder="Type your answer here" required>
     <p>
       Hi _____,<br /><br />
       Thank you for taking this questionnaire.<br /><br />
       It is completely anonymous and only takes about 5 minutes. Your answers will help us to improve your experience when using FreeCodeCamp. </p>
 
-      <fieldset>
-        <legend>Are you already working as a software developer?</legend>
-        <input type="radio" id="yeswork" name="alreadyworking"><label for='yeswork'>Yes</label>
-        <input type="radio" id="nowork" name="alreadyworking"><label for='nowork'>No</label>
-      </fieldset>
+    <fieldset>
+      <legend>Are you already working as a software developer?</legend>
+      <input type="radio" id="yeswork" name="alreadyworking"><label for='yeswork'>Yes</label>
+      <input type="radio" id="nowork" name="alreadyworking"><label for='nowork'>No</label>
+    </fieldset>
 
-      <fieldset>
-        <legend>Would you prefer to...</legend>
-        <input type="radio" id="business" name="company"><label for='business'>Start your own business</label>
-        <input type="radio" id="startup" name="company"><label for='startup'>Work for a startup</label>
-        <input type="radio" id="government" name="company"><label for='goverment'>Work for government</label>
-        <input type="radio" id="freelance" name="company"><label for='freelance'>Freelance</label>
-        <input type="radio" id="nonprofit" name="company"><label for='nonprofit'>Work for a nonprofit</label>
-        <input type="radio" id="corporation" name="company"><label for='corporation'>Work for a multinational corporation</label>
-      </fieldset>
+    <fieldset>
+      <legend>Would you prefer to...</legend>
+      <input type="radio" id="business" name="company"><label for='business'>Start your own business</label>
+      <input type="radio" id="startup" name="company"><label for='startup'>Work for a startup</label>
+      <input type="radio" id="government" name="company"><label for='goverment'>Work for government</label>
+      <input type="radio" id="freelance" name="company"><label for='freelance'>Freelance</label>
+      <input type="radio" id="nonprofit" name="company"><label for='nonprofit'>Work for a nonprofit</label>
+      <input type="radio" id="corporation" name="company"><label for='corporation'>Work for a multinational corporation</label>
+    </fieldset>
 
-
-
-      <fieldset>
+    <fieldset>
       <legend>Which of these careers are you interested in?</legend>
       <p>choose as many as you like</p>
       <input type="checkbox" id="full-stack" name="career"><label for='full-stack'>Full-Stack Web Developer</label>
@@ -64,31 +62,21 @@
       <input type="radio" id="dontknow" name="applying"><label for='dontknow'>I haven't decided</label>
     </fieldset>
 
-
-
-
-
-
-
     <fieldset>
       <legend>Would you prefer to work...</legend>
       <input type="radio" id="home" name="where"><label for='home'>From home</label>
       <input type="radio" id="office" name="where"><label for='office'>In an office with other developers</label>
-        <input type="radio" id="nopref" name="where"><label for='nopref'>No preference</label>
+      <input type="radio" id="nopref" name="where"><label for='nopref'>No preference</label>
     </fieldset>
 
-
-
-
-        <fieldset>
-          <legend>Are you willing to relocate for a job?</legend>
-          <input type="radio" id="yes_relocate" name="relocate"><label for='yes_relocate'>Yes</label>
-          <input type="radio" id="no_relocate" name="relocate"><label for='no_relocate'>No</label>
-        </fieldset>
-
+    <fieldset>
+      <legend>Are you willing to relocate for a job?</legend>
+      <input type="radio" id="yes_relocate" name="relocate"><label for='yes_relocate'>Yes</label>
+      <input type="radio" id="no_relocate" name="relocate"><label for='no_relocate'>No</label>
+    </fieldset>
 
     <fieldset>
-      <legend>  What is your biggest reason for learning to code?</legend>
+      <legend> What is your biggest reason for learning to code?</legend>
       <input type="radio" id="change" name="whycode"><label for='change'>To change careers</label>
       <input type="radio" id="incurrent" name="whycode"><label for='incurrent'>To succeed in current careers</label>
       <input type="radio" id="school" name="whycode"><label for='school'>To meet school requirements</label>
@@ -97,13 +85,16 @@
       <input type="radio" id="hobby" name="whycode"><label for='hobby'>As a hobby</label>
       <input type="radio" id="Other" name="whycode"><label for='Other'>Other</label>
     </fieldset>
+    
+    <fieldset>
+      <label for="hours">About how many hours do you spend learning each week?</label>
+      <input id="hours" type="text" placeholder="Type your answer here">
+    </fieldset>
 
-    <label for="hours">About how many hours do you spend learning each week?</label>
-    <input id="hours" type="text" placeholder="Type your answer here">
-
-    <label for="months">About how many months have you been programming for?</label>
-    <input id="months" type="text" placeholder="Type your answer here">
-
+    <fieldset>
+      <label for="months">About how many months have you been programming for?</label>
+      <input id="months" type="text" placeholder="Type your answer here">
+    </fieldset>
 
     <fieldset>
       <legend>Have you attended a full-time coding bootcamp?</legend>
@@ -111,8 +102,10 @@
       <input type="radio" id="no" name="bootcamp"><label for='no'>No</label>
     </fieldset>
 
-    <label for="age">How old are you?</label>
-    <input id="age" type="text" placeholder="Type your answer here">
+    <fieldset>
+      <label for="age">How old are you?</label>
+      <input id="age" type="text" placeholder="Type your answer here">
+    </fieldset>
 
     <fieldset>
       <legend>What's your gender?</legend>
@@ -131,13 +124,6 @@
       <input type="radio" id="BD" name="educ"><label for='BD'>Bachelor's degreel</label>
       <input type="radio" id="MD" name="educ"><label for='MD'>Master's degree</label>
       <input type="radio" id="PhD" name="educ"><label for='PhD'>Ph.D.</label>
-    </fieldset>
-
-
-
-
-
-
     </fieldset>
 
     <button type='submit'>Submit</button>
