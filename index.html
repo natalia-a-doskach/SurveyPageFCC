@@ -12,127 +12,135 @@
 </head>
 
 <body>
-  <header><h1>Survey Form</h1></header>
+  <header>
+    <h1>Survey Form</h1>
+  </header>
   <main>
-  <form action="#">
-    <legend>What is your first name?</legend>
-    <input type="text" placeholder="Type your answer here" required>
-    <p id="hi">
-      Hi _____,<br /><br />
-      Thank you for taking this questionnaire.<br /><br />
-      It is completely anonymous and only takes about 5 minutes. Your answers will help us to improve your experience when using FreeCodeCamp. </p>
+    <form action="#">
 
-    <fieldset>
-      <legend>Are you already working as a software developer?</legend>
-      <div><input type="radio" id="yeswork" name="alreadyworking"><label for='yeswork'>Yes</label></div>
-      <div><input type="radio" id="nowork" name="alreadyworking"><label for='nowork'>No</label></div>
-    </fieldset>
 
-    <fieldset>
-      <legend>Would you prefer to...</legend>
-      <div><input type="radio" id="business" name="company"><label for='business'>Start your own business</label></div>
-      <div><input type="radio" id="startup" name="company"><label for='startup'>Work for a startup</label></div>
-      <div><input type="radio" id="government" name="company"><label for='goverment'>Work for government</label></div>
-      <div><input type="radio" id="freelance" name="company"><label for='freelance'>Freelance</label></div>
-      <div><input type="radio" id="nonprofit" name="company"><label for='nonprofit'>Work for a nonprofit</label></div>
-      <div><input type="radio" id="corporation" name="company"><label for='corporation'>Work for a multinational corporation</label></div>
-    </fieldset>
+        <p id="hi">
+          Hi!<br />
+          Thank you for taking this questionnaire.<br />
+          It is completely anonymous and only takes about 5 minutes. Your answers will help us to improve your experience when using FreeCodeCamp. </p>
 
-    <fieldset>
-      <legend>Which of these careers are you interested in?</legend>
-      <p>choose as many as you like</p>
-      <div><input type="checkbox" id="full-stack" name="career"><label for='full-stack'>Full-Stack Web Developer</label></div>
-      <div><input type="checkbox" id="frontdev" name="career"><label for='frontdev'>Front-End Web Developer</label></div>
-      <div><input type="checkbox" id="backdev" name="career"><label for='backdev'>Back-End Web Developer</label></div>
-      <div><input type="checkbox" id="teacher" name="career"><label for='teacher'>Teacher/Trainer</label></div>
-      <div><input type="checkbox" id="ux" name="career"><label for='ux'>UX Designer</label></div>
-      <div><input type="checkbox" id="devops" name="career"><label for='devops'>DevOps/SysAdmin</label></div>
-      <div><input type="checkbox" id="data" name="career"><label for='data'>Data Scientist</label></div>
-      <div><input type="checkbox" id="security" name="career"><label for='security'>Information Security</label></div>
-      <div><input type="checkbox" id="game" name="career"><label for='game'>Game Developer</label></div>
-      <div><input type="checkbox" id="mobile" name="career"><label for='mobile'>Mobile Developer</label></div>
-      <div><input type="checkbox" id="product-manager" name="career"><label for='product-manager'>Product Manager</label></div>
-    </fieldset>
 
-    <fieldset>
-      <legend>When do you plan to start applying for developer jobs?</legend>
-      <div><input type="radio" id="already" name="applying"><label for='already'>I'm already applying</label></div>
-      <div><input type="radio" id="6m" name="applying"><label for='6m'>Within the next 6 months</label></div>
-      <div><input type="radio" id="7m" name="applying"><label for='7m'>Within 7 to 12 months</label></div>
-      <div><input type="radio" id="12m" name="applying"><label for='12m'>More than 12 months from now</label></div>
-      <div><input type="radio" id="dontknow" name="applying"><label for='dontknow'>I haven't decided</label></div>
-    </fieldset>
+      <fieldset>
+        <legend>What is your first name?</legend>
+        <input tabindex="1" type="text" placeholder="Type your answer here" required>
+      </fieldset>
 
-    <fieldset>
-      <legend>Would you prefer to work...</legend>
-      <div><input type="radio" id="home" name="where"><label for='home'>From home</label></div>
-      <div><input type="radio" id="office" name="where"><label for='office'>In an office with other developers</label></div>
-      <div><input type="radio" id="nopref" name="where"><label for='nopref'>No preference</label></div>
-    </fieldset>
+      <fieldset>
+        <legend>Are you already working as a software developer?</legend>
+        <div><input type="radio" id="yeswork" name="alreadyworking"><label tabindex="1" for='yeswork'>Yes</label></div>
+        <div><input type="radio" id="nowork" name="alreadyworking"><label tabindex="1" for='nowork'>No</label></div>
+      </fieldset>
 
-    <fieldset>
-      <legend>Are you willing to relocate for a job?</legend>
-      <div><input type="radio" id="yes_relocate" name="relocate"><label for='yes_relocate'>Yes</label></div>
-      <div><input type="radio" id="no_relocate" name="relocate"><label for='no_relocate'>No</label></div>
-    </fieldset>
+      <fieldset>
+        <legend>Would you prefer to...</legend>
+        <div><input type="radio" id="business" name="company"><label tabindex="1" for='business'>Start your own business</label></div>
+        <div><input type="radio" id="startup" name="company"><label tabindex="1" for='startup'>Work for a startup</label></div>
+        <div><input type="radio" id="government" name="company"><label tabindex="1" for='goverment'>Work for government</label></div>
+        <div><input type="radio" id="freelance" name="company"><label tabindex="1" for='freelance'>Freelance</label></div>
+        <div><input type="radio" id="nonprofit" name="company"><label tabindex="1" for='nonprofit'>Work for a nonprofit</label></div>
+        <div><input type="radio" id="corporation" name="company"><label tabindex="1" for='corporation'>Work for a multinational corporation</label></div>
+      </fieldset>
 
-    <fieldset>
-      <legend> What is your biggest reason for learning to code?</legend>
-      <div><input type="radio" id="change" name="whycode"><label for='change'>To change careers</label></div>
-      <div><input type="radio" id="incurrent" name="whycode"><label for='incurrent'>To succeed in current careers</label></div>
-      <div><input type="radio" id="school" name="whycode"><label for='school'>To meet school requirements</label></div>
-      <div><input type="radio" id="art" name="whycode"><label for='art'>To create art or entertainment</label></div>
-      <div><input type="radio" id="business" name="whycode"><label for='business'>To start a business</label></div>
-      <div><input type="radio" id="hobby" name="whycode"><label for='hobby'>As a hobby</label></div>
-      <div><input type="radio" id="Other" name="whycode"><label for='Other'>Other</label></div>
-    </fieldset>
+      <fieldset>
+        <legend>Which of these careers are you interested in?</legend>
+        <p>choose as many as you like</p>
+        <div><input type="checkbox" id="full-stack" name="career"><label tabindex="1" for='full-stack'>Full-Stack Web Developer</label></div>
+        <div><input type="checkbox" id="frontdev" name="career"><label tabindex="1" for='frontdev'>Front-End Web Developer</label></div>
+        <div><input type="checkbox" id="backdev" name="career"><label tabindex="1" for='backdev'>Back-End Web Developer</label></div>
+        <div><input type="checkbox" id="teacher" name="career"><label tabindex="1" for='teacher'>Teacher/Trainer</label></div>
+        <div><input type="checkbox" id="ux" name="career"><label tabindex="1" for='ux'>UX Designer</label></div>
+        <div><input type="checkbox" id="devops" name="career"><label tabindex="1" for='devops'>DevOps/SysAdmin</label></div>
+        <div><input type="checkbox" id="data" name="career"><label tabindex="1" for='data'>Data Scientist</label></div>
+        <div><input type="checkbox" id="security" name="career"><label tabindex="1" for='security'>Information Security</label></div>
+        <div><input type="checkbox" id="game" name="career"><label tabindex="1" for='game'>Game Developer</label></div>
+        <div><input type="checkbox" id="mobile" name="career"><label tabindex="1" for='mobile'>Mobile Developer</label></div>
+        <div><input type="checkbox" id="product-manager" name="career"><label tabindex="1" for='product-manager'>Product Manager</label></div>
+      </fieldset>
 
-    <fieldset>
-      <label for="hours">About how many hours do you spend learning each week?</label>
-      <input id="hours" type="text" placeholder="Type your answer here">
-    </fieldset>
+      <fieldset>
+        <legend>When do you plan to start applying for developer jobs?</legend>
+        <div><input type="radio" id="already" name="applying"><label tabindex="1" for='already'>I'm already applying</label></div>
+        <div><input type="radio" id="6m" name="applying"><label tabindex="1" for='6m'>Within the next 6 months</label></div>
+        <div><input type="radio" id="7m" name="applying"><label tabindex="1" for='7m'>Within 7 to 12 months</label></div>
+        <div><input type="radio" id="12m" name="applying"><label tabindex="1" for='12m'>More than 12 months from now</label></div>
+        <div><input type="radio" id="dontknow" name="applying"><label tabindex="1" for='dontknow'>I haven't decided</label></div>
+      </fieldset>
 
-    <fieldset>
-      <label for="months">About how many months have you been programming for?</label>
-      <input id="months" type="text" placeholder="Type your answer here">
-    </fieldset>
+      <fieldset>
+        <legend>Would you prefer to work...</legend>
+        <div><input type="radio" id="home" name="where"><label tabindex="1" for='home'>From home</label></div>
+        <div><input type="radio" id="office" name="where"><label tabindex="1" for='office'>In an office with other developers</label></div>
+        <div><input type="radio" id="nopref" name="where"><label tabindex="1" for='nopref'>No preference</label></div>
+      </fieldset>
 
-    <fieldset>
-      <legend>Have you attended a full-time coding bootcamp?</legend>
-      <div><input type="radio" id="yesboot" name="bootcamp"><label for='yesboot'>Yes</label></div>
-      <div><input type="radio" id="noboot" name="bootcamp"><label for='noboot'>No</label></div>
-    </fieldset>
+      <fieldset>
+        <legend>Are you willing to relocate for a job?</legend>
+        <div><input type="radio" id="yes_relocate" name="relocate"><label tabindex="1" for='yes_relocate'>Yes</label></div>
+        <div><input type="radio" id="no_relocate" name="relocate"><label tabindex="1" for='no_relocate'>No</label></div>
+      </fieldset>
 
-    <fieldset>
-      <label for="age">How old are you?</label>
-      <input id="age" type="text" placeholder="Type your answer here">
-    </fieldset>
+      <fieldset>
+        <legend> What is your biggest reason for learning to code?</legend>
+        <div><input type="radio" id="change" name="whycode"><label tabindex="1" for='change'>To change careers</label></div>
+        <div><input type="radio" id="incurrent" name="whycode"><label tabindex="1" for='incurrent'>To succeed in current careers</label></div>
+        <div><input type="radio" id="school" name="whycode"><label tabindex="1" for='school'>To meet school requirements</label></div>
+        <div><input type="radio" id="art" name="whycode"><label tabindex="1" for='art'>To create art or entertainment</label></div>
+        <div><input type="radio" id="business" name="whycode"><label tabindex="1" for='business'>To start a business</label></div>
+        <div><input type="radio" id="hobby" name="whycode"><label tabindex="1" for='hobby'>As a hobby</label></div>
+        <div><input type="radio" id="Other" name="whycode"><label tabindex="1" for='Other'>Other</label></div>
+      </fieldset>
 
-    <fieldset>
-      <legend>What's your gender?</legend>
-      <div><input type="radio" id="fem" name="gender"><label for='fem'>Female</label></div>
-      <div><input type="radio" id="male" name="gender"><label for='male'>Male</label></div>
-      <div><input type="radio" id="nottosay" name="gender"><label for='nottosay'>Prefer not to say</label></div>
-      <div><input type="radio" id="other" name="gender"><label for='other'>Other</label></div>
-    </fieldset>
+      <fieldset>
+        <label for="hours">About how many hours do you spend learning each week?</label>
+        <input tabindex="1" id="hours" type="text" placeholder="Type your answer here">
+      </fieldset>
 
-    <fieldset>
-      <legend>What's the biggest degree or level of school you have completed?</legend>
-      <div><input type="radio" id="nohs" name="educ"><label for='nohs'>No high school</label></div>
-      <div><input type="radio" id="somehs" name="educ"><label for='somehs'>Some high school</label></div>
-      <div><input type="radio" id="hs" name="educ"><label for='hs'>High school diploma or equivalent</label></div>
-      <div><input type="radio" id="somecoll" name="educ"><label for='somecoll'>Some college credit, no degree</label></div>
-      <div><input type="radio" id="BD" name="educ"><label for='BD'>Bachelor's degreel</label></div>
-      <div><input type="radio" id="MD" name="educ"><label for='MD'>Master's degree</label></div>
-      <div><input type="radio" id="PhD" name="educ"><label for='PhD'>Ph.D.</label></div>
-    </fieldset>
+      <fieldset>
+        <label for="months">About how many months have you been programming for?</label>
+        <input tabindex="1" id="months" type="text" placeholder="Type your answer here">
+      </fieldset>
 
-    <button type='submit'>Submit</button>
-  </form>
-</main>
-<footer>
-<p>Made with pure HTML, CSS & love by <a target='_blank' href='https://github.com/natalia-a-doskach'>Natalia Doskach</a>.</p>
-</footer>
+      <fieldset>
+        <legend>Have you attended a full-time coding bootcamp?</legend>
+        <div><input type="radio" id="yesboot" name="bootcamp"><label tabindex="1" for='yesboot'>Yes</label></div>
+        <div><input type="radio" id="noboot" name="bootcamp"><label tabindex="1" for='noboot'>No</label></div>
+      </fieldset>
+
+      <fieldset>
+        <label for="age">How old are you?</label>
+        <input tabindex="1" id="age" type="text" placeholder="Type your answer here">
+      </fieldset>
+
+      <fieldset>
+        <legend>What's your gender?</legend>
+        <div><input type="radio" id="fem" name="gender"><label tabindex="1" for='fem'>Female</label></div>
+        <div><input type="radio" id="male" name="gender"><label tabindex="1" for='male'>Male</label></div>
+        <div><input type="radio" id="nottosay" name="gender"><label tabindex="1" for='nottosay'>Prefer not to say</label></div>
+        <div><input type="radio" id="other" name="gender"><label tabindex="1" for='other'>Other</label></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>What's the biggest degree or level of school you have completed?</legend>
+        <div><input type="radio" id="nohs" name="educ"><label tabindex="1" for='nohs'>No high school</label></div>
+        <div><input type="radio" id="somehs" name="educ"><label tabindex="1" for='somehs'>Some high school</label></div>
+        <div><input type="radio" id="hs" name="educ"><label tabindex="1" for='hs'>High school diploma or equivalent</label></div>
+        <div><input type="radio" id="somecoll" name="educ"><label tabindex="1" for='somecoll'>Some college credit, no degree</label></div>
+        <div><input type="radio" id="BD" name="educ"><label tabindex="1" for='BD'>Bachelor's degreel</label></div>
+        <div><input type="radio" id="MD" name="educ"><label tabindex="1" for='MD'>Master's degree</label></div>
+        <div><input type="radio" id="PhD" name="educ"><label tabindex="1" for='PhD'>Ph.D.</label></div>
+      </fieldset>
+
+      <button type='submit'>Submit</button>
+    </form>
+  </main>
+  <footer>
+    <p>Made with pure HTML, CSS & love by <a target='_blank' href='https://github.com/natalia-a-doskach'>Natalia Doskach</a>.</p>
+  </footer>
 </body>
 
 </html>
