@@ -4,6 +4,12 @@ legend {
 }
 label{
   font-family: "Roboto", sans-serif;
+  display:block;
+  width:auto;
+  height:100%;
+  padding:10px;
+  cursor:pointer;
+  overflow:hidden;
 }
 [ for='hours']{
   font-size: 24px;
@@ -25,6 +31,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     opacity:1;
+    margin-right:200px;
 }
 footer p{
   font-size: 12px;
@@ -46,16 +53,56 @@ a:visited{
 }
 /*STYLING TEXT FORMS*/
 input[type=text] {
+  font-family: "Roboto",sans-serif;
+  font-size:16px;
   display:block;
   background-color:rgba(0,0,0,0);
-  margin:15px;
-  padding:10px;
-  border-radius:10px;
   border-style:solid;
   border-color: rgba(0,0,0,0.6);
+  border-width:0.2px;
+  color: rgb(0, 0, 0);
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 0px 1px inset;
+  border-radius: 4px;
+  margin:10px;
+  padding:10px;
+  width:90%;
+}
+
+input[type=text]::placeholder{
+  font-family: "Roboto",sans-serif;
+  font-size:16px;
 }
 
 fieldset {
   margin-top:30px;
   margin-bottom:30px;
+}
+
+div{
+color: rgb(0, 0, 0);
+box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 0px 1px inset;
+border-radius: 4px;
+margin:10px;
+padding:0px;
+width:90%;
+}
+
+
+/*hide checkers*/
+[type=radio] {
+position: absolute;
+opacity: 0;
+height: 0;
+width: 0;}
+[type=checkbox] {
+position: absolute;
+opacity: 0;
+height: 0;
+width: 0;}
+
+input[type=checkbox]:checked + label {
+   background-color: rgba(0, 0, 0, 0.1);
+}
+input[type=radio]:checked + label {
+   background-color: rgba(0, 0, 0, 0.1);
 }
